@@ -9,6 +9,7 @@
  *  - selectable
  *
  * Tips: Should add faq about `datetime` mode with `defaultValue`
+ * Block should be done till Picker panel rernders
  */
 
 import * as React from 'react';
@@ -54,6 +55,7 @@ export type PickerSharedProps<DateType> = {
   /** Make input readOnly to avoid popup keyboard in mobile */
   inputReadOnly?: boolean;
   id?: string;
+  source?: object;
 
   // Value
   format?: string | CustomFormat<DateType> | (string | CustomFormat<DateType>)[];
